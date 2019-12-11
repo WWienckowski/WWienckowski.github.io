@@ -1,0 +1,73 @@
+.box{
+    position:relative;
+    font-size:12px;
+    top:40px;
+    left:50%;
+    display:inline-block;
+    margin:0px;
+    text-align:center;
+    line-height:20px;
+    border-radius: 30%;
+    background-color: yellow;
+    color: red;
+    border-color: red;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+}
+
+.row{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;      
+}
+
+h1{
+    background-color: green;
+    font-size: 54px;
+}
+
+body{
+    background-image: url("wreath.png");
+    background-repeat: round;
+    background-color: darkred;
+    color: white;
+}
+html,body{margin:0; padding:0;}
+
+/*Cookie Consent Begin*/
+#cookieConsent {
+    background-color: darkred;
+    min-height: 100%;
+    font-size: 14px;
+    color: white;
+    line-height: 26px;
+    padding: 8px 0px 8px 8px;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+}
+#cookieConsent .cookieConsentOK {
+    background-color: green;
+    color: yellow;
+    font-size: large;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    float: right;
+    margin: 0 60px 0 10px;
+}
+#cookieConsent .cookieConsentOK:hover {
+    background-color: #E0C91F;
+}
+/*Cookie Consent End*/
