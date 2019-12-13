@@ -53,11 +53,47 @@ setInterval(function () {
 
 $(document).ready(function(){   
     setTimeout(function () {
-        $("#cookieConsent").fadeIn(200);
+        $("#cookieConsent").fadeIn(0);
      }, 0);
     $(".cookieConsentOK").click(function() {
         $("#cookieConsent").fadeOut(10000);
     }); 
 }); 
 
+$(document).mouseleave(function(){
+    r1 = window.confirm("Hey, wait... \n \nAre you leaving??")
+    if (r1 == true) {
+        r2 = window.confirm("Ok I guess that means you're a real hum-bug.")
+        if (r2 == true) {
+            r3 = window.confirm("So you really want to leave?");
+            if (r3 == true){
+                r4 = window.confirm("Just take this quick survey before you go. Thanks!");
+                if (r4 == true){
+                    //open survey
+                    window.open("survey.html")
+                } else{
+                    //open survey
+                    setTimeout(function () {
+                        $(".survey").fadeIn(0);
+                     }, 0);
+                     window.alert("oops...")
+                }
+            } else{
+                alert("I didn't thing you really wanted to leave.");
+            }
+        } else {
+            alert("Ok, cool. Enjoy the site a little more.")
+        }
+    }
+    
+})
+
+$("#stopButton").click(function(){
+    alert("TODO: add stop button functionality.");
+})
+
+$("#buttZone").click(function(){
+    window.open("grinch.html", "_blank", "height=375,width=400,left="+(mouse.x-100)+",top="+mouse.y)
+    document.getElementById("grinchAlert").play();
+})
 

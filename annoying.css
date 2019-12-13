@@ -1,8 +1,7 @@
 .box{
     position:relative;
     font-size:12px;
-    top:40px;
-    left:50%;
+    left:45%;
     display:inline-block;
     margin:0px;
     text-align:center;
@@ -11,13 +10,6 @@
     background-color: yellow;
     color: red;
     border-color: red;
-}
-
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 33%;
 }
 
 .row{
@@ -59,6 +51,7 @@ html,body{margin:0; padding:0;}
 #cookieConsent .cookieConsentOK {
     background-color: green;
     color: yellow;
+    border-color: gold;
     font-size: large;
     display: inline-block;
     border-radius: 5px;
@@ -71,3 +64,34 @@ html,body{margin:0; padding:0;}
     background-color: #E0C91F;
 }
 /*Cookie Consent End*/
+
+.survey{
+    background-color: darkred;
+    min-height: 100%;
+    font-size: 14px;
+    color: white;
+    line-height: 26px;
+    padding: 8px 0px 8px 8px;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+}
+
+.grinchBody{
+    background-color: gold;
+}
+
+p.alert{
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+}
+
+.flipped { 
+    transform: rotateY(180deg);
+  }
