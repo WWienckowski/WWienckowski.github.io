@@ -60,6 +60,8 @@ $(document).ready(function(){
     }); 
 }); 
 
+var survey = document.getElementById("survey");
+
 $(document).mouseleave(function(){
     r1 = window.confirm("Hey, wait... \n \nAre you leaving??")
     if (r1 == true) {
@@ -70,7 +72,9 @@ $(document).mouseleave(function(){
                 r4 = window.confirm("Just take this quick survey before you go. Thanks!");
                 if (r4 == true){
                     //open survey
-                    window.open("survey.html")
+                    setTimeout(function () {
+                        $(".survey").fadeIn(0);
+                     }, 0);
                 } else{
                     //open survey
                     setTimeout(function () {
