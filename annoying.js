@@ -93,6 +93,8 @@ $(document).mouseleave(function(){
 })
 
 $("#stopButton").click(function(){
+    window.open("grinch.html", "_blank", "height=375,width=400,left="+(mouse.x-100)+",top="+mouse.y)
+    document.getElementById("grinchAlert").play();
     alert("TODO: add stop button functionality.");
 })
 
